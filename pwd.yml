@@ -41,8 +41,8 @@ services:
       REDIS_QUEUE: redis-queue:6379
       SOCKETIO_PORT: "9000"
     volumes:
-      - sites:/home/frappe/frappe-bench/sites
-      - logs:/home/frappe/frappe-bench/logs
+      - ./sites:/home/frappe/frappe-bench/sites
+      - ./logs:/home/frappe/frappe-bench/logs
 
   create-site:
     image: frappe/erpnext:v16.7.0
